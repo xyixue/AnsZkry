@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="zh"><head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content=""><title>Jekyll 主题 Arktos | 青萍</title>
+  <meta name="keywords" content="Jekyll, Jekyll theme, Jekyll主题, jekyll-theme-arktos">
+  <meta name="description" content=""><link rel="stylesheet" href="/assets/main.css?v=0.2.6" />
+<script src="/assets/main.js?v=0.2.6" defer></script></head>
+<body class="body-post">
+    <a href="/" class="logo"><img src="/img/book.svg" class="logo_img"><h1>青萍</h1>
+</a><main class="post__wrapper"><nav class="top-nav">
+
+<a href="/about.html" class="nav-link ">关于</a>
+
+
+<a href="/archive.html" class="nav-link ">归档</a>
+
+
+</nav><div class="post__top_navs clearfix">
+    <nav class="post__archive_path"><a href="/blog/" id="archiveBtn">
+        <div class="post__archive_icon">
+          <svg width="40" height="40">
+            <circle class="circle-progress" r="18" cy="20" cx="20"  stroke-linejoin="round" stroke-linecap="round" />
+          </svg>
+          <span class="post__archive_icon"></span>
+        </div>
+        博客
+      </a>
+    </nav>
+  </div>
+  <article class="post">
+    <header class="post__header">
+      <h1 class="post__title">Jekyll 主题 Arktos</h1>
+      <div class="post__meta">
+        <time>2019-01-11 21:46</time>
+      </div>
+    </header>
+    <div class="post__content content">
+      <ul id="toc" class="section-nav">
+<li class="toc-entry toc-h2"><a href="#为什么叫arktos呢">为什么叫Arktos呢？</a></li>
+<li class="toc-entry toc-h2"><a href="#以下是详细的使用方法">以下是详细的使用方法</a>
+<ul>
+<li class="toc-entry toc-h3"><a href="#安装">安装</a></li>
+<li class="toc-entry toc-h3"><a href="#用法">用法</a></li>
+</ul>
+</li>
+</ul><p>去年8月开始，我彻底从Wordpress毕业，转向了Jekyll。这一折腾又是大半年，如今折腾累了，差不多也该安定一下了。毕竟，时间和精力都是有限的，排着队要做的事情却有很多。</p>
+
+<!--more-->
+
+<p>这一版博客的主题我是本着超极简风格的目标做的，其极简程度远甚于之前做的两款Wordpress主题。为什么总是倾向于极简风格呢？原因很简单，因为我不是专业设计师，我只是一个程序员。</p>
+
+<p>这一版主题颜色只有黑白灰度，元素只有线条，配合文字图片以及大面积的留白。这样或许有些单调，所以我尽量让线条动起来，可以稍稍弥补颜色欠缺所带来的呆板感。</p>
+
+<p>我把博客部分的样式和页面提取出来，打包成gem，作为Arktos主题发布，给我这一阶段的折腾画上一个尾声。它和你在这个网站里看到的页面会稍有偏差——我删掉了首页、小说、归档等页面，这些内容我觉得对于一个普通的Jekyll博客用户来说没什么必要——此外我增添了一些博客必要的元素。</p>
+
+<p>如果你觉得单单一个博客不够的话，本站的源码也是完全开放，可以来<a href="https://github.com/erlzhang/persephone">这里</a>获取。不过这个我会改得很随意，毕竟是自己的网站！</p>
+
+<p>如果你对极简的需求和审美恰巧与我相似，且只想要一个简单的博客，可以试一试<a href="https://github.com/erlzhang/jekyll-theme-arktos">Arktos</a>，我会持续维护。</p>
+
+<p><img src="/img/arktos.png" alt="Jekyll Theme Arktos"></p>
+
+<p>此外，我在Github Pages上给它单独配了一个预览页，如果你很好奇究竟哪里和这里不一样，可以看看<a href="https://erlzhang.github.io/arktos-demo/">这里</a>。</p>
+
+<h2 id="为什么叫arktos呢">
+<a class="anchor" href="#%E4%B8%BA%E4%BB%80%E4%B9%88%E5%8F%ABarktos%E5%91%A2" aria-hidden="true"><span class="octicon octicon-link"></span></a>为什么叫Arktos呢？</h2>
+
+<p>这很简单啊，Arktos是古希腊神话里的一个女神名字。如果你看过我的Github，你会发现我的私人项目名很多都是以希腊女神的名字命名的（Dysis也是，Persephone就更不用说了吧！）——这其实并无任何含义，只是一个命名习惯<sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote">1</a></sup>。</p>
+
+<h2 id="以下是详细的使用方法">
+<a class="anchor" href="#%E4%BB%A5%E4%B8%8B%E6%98%AF%E8%AF%A6%E7%BB%86%E7%9A%84%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95" aria-hidden="true"><span class="octicon octicon-link"></span></a>以下是详细的使用方法</h2>
+
+<h3 id="安装">
+<a class="anchor" href="#%E5%AE%89%E8%A3%85" aria-hidden="true"><span class="octicon octicon-link"></span></a>安装</h3>
+
+<p>把这行代码加入到你的<code class="language-plaintext highlighter-rouge">Gemfile</code>中。</p>
+
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">gem</span> <span class="s2">"jekyll-theme-arktos"</span>
+</code></pre></div></div>
+
+<p>然后在<code class="language-plaintext highlighter-rouge">_config.yml</code>中添加：</p>
+
+<div class="language-yml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">theme</span><span class="pi">:</span> <span class="s">jekyll-theme-arktos</span>
+</code></pre></div></div>
+
+<p>然后执行：</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>bundle
+</code></pre></div></div>
+
+<p>或者手动安装：</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>gem <span class="nb">install </span>jekyll-theme-arktos
+</code></pre></div></div>
+
+<p>如果你是依托于Github Pages build的用户，以上配置都不会生效。不过在<code class="language-plaintext highlighter-rouge">_config.yml</code>中添加以下一行代码即可替代：</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>remote_theme: erlzhang/jekyll-theme-arktos
+</code></pre></div></div>
+
+<h3 id="用法">
+<a class="anchor" href="#%E7%94%A8%E6%B3%95" aria-hidden="true"><span class="octicon octicon-link"></span></a>用法</h3>
+
+<p>主题支持jekyll-pagination-v2，不过你需要先开启分页。</p>
+
+<div class="language-yml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">pagination</span><span class="pi">:</span>
+    <span class="na">enabled</span><span class="pi">:</span> <span class="no">true</span>
+</code></pre></div></div>
+
+<p>首页默认是不显示摘要的（最好确认一下你的摘要是否正常，我发现Jekyll升级之后自动截取摘要好像失效了），如果想要显示摘要，在<code class="language-plaintext highlighter-rouge">_config.yml</code>中添加：</p>
+
+<div class="language-yml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">arktos</span><span class="pi">:</span>
+  <span class="na">excerpt</span><span class="pi">:</span> <span class="no">true</span>
+</code></pre></div></div>
+
+<p>无需插件，即可使用mermaid。方法如下：</p>
+
+<pre>
+```mermaid
+graph TD;
+  A--&gt;B;
+  A--&gt;C;
+  B--&gt;D;
+  C--&gt;D;
+```
+</pre>
+
+<p>以上看着是不是很眼熟？没错，这就是Github项目主页上部分内容的翻译！</p>
+
+<p>如果有问题和需求可尽情提到<a href="https://github.com/erlzhang/jekyll-theme-arktos/issues">issues</a>中。</p>
+
+<div class="footnotes" role="doc-endnotes">
+  <ol>
+    <li id="fn:1" role="doc-endnote">
+      <p>我最开始是叫它Anatole，后来我发现有个Hexo主题起了这个名字，为了避免歧义（同时也是为了主题移植做准备），改名为Arktos。 <a href="#fnref:1" class="reversefootnote" role="doc-backlink">↩</a></p>
+    </li>
+  </ol>
+</div>
+
+    </div>
+  </article><aside class="post__contact"><h4><a href="/about.html">青萍</a></h4>
+  <p>生活就是一本书，一壶茶，一个阳光明媚的下午！</p>
+<div class="icon__list"><a href="mailto:rmzfle@outlook.com" class="icon__link" target="_blank"><svg class="icon__stroke" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+  <polyline points="22,6 12,13 2,6"></polyline>
+</svg>
+</a><a href="https://github.com/erlzhang" class="icon__link" target="_blank"><svg viewBox="0 0 64 64" class="icon__fill">
+  <path stroke-width="0" d="M32 0 C14 0 0 14 0 32 0 53 19 62 22 62 24 62 24 61 24 60 L24 55 C17 57 14 53 13 50 13 50 13 49 11 47 10 46 6 44 10 44 13 44 15 48 15 48 18 52 22 51 24 50 24 48 26 46 26 46 18 45 12 42 12 31 12 27 13 24 15 22 15 22 13 18 15 13 15 13 20 13 24 17 27 15 37 15 40 17 44 13 49 13 49 13 51 20 49 22 49 22 51 24 52 27 52 31 52 42 45 45 38 46 39 47 40 49 40 52 L40 60 C40 61 40 62 42 62 45 62 64 53 64 32 64 14 50 0 32 0 Z" />
+</svg>
+</a><a href="https://twitter.com/icily0719" class="icon__link" target="_blank"><svg class="icon__stroke" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path>
+</svg>
+</a><a href="https://codepen.io/erlzhang" class="icon__link" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon__stroke"><polygon points="12 2 22 8.5 22 15.5 12 22 2 15.5 2 8.5 12 2"></polygon><line x1="12" y1="22" x2="12" y2="15.5"></line><polyline points="22 8.5 12 15.5 2 8.5"></polyline><polyline points="2 15.5 12 8.5 22 15.5"></polyline><line x1="12" y1="2" x2="12" y2="8.5"></line></svg></a><a href="/feed.xml" class="icon__link"><svg class="icon__stroke" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+  <path d="M4 11a9 9 0 0 1 9 9"></path>
+  <path d="M4 4a16 16 0 0 1 16 16"></path>
+  <circle cx="5" cy="19" r="1"></circle>
+</svg>
+</a></div>
+</aside>
+</main><footer class="site-footer">
+  © 2020<a href="/">青萍</a>. Theme<a href="https://github.com/erlzhang/jekyll-theme-persephone" target="_blank">Persephone</a>
+</footer>
+
+  </body>
+</html>
